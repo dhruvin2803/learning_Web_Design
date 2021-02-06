@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color: #e8d2c7;
+  }
+  
+  header{
+    width: 100%;
+    background-color: #ffffff;
+
+
+  }
+  
+  .container{
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #240504;
+    transform: translateY(-100rem);
+    animation: slideIn 1s forwards;
+  }
+  
+  nav{
+    padding-top: 2rem; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transform: translateY(-100rem);
+    animation: slideIn 1s forwards;
+  }
+  
+  .logo{
+    height: 8rem;
+    width: 10rem;
+    transform: translateY(-100rem);
+      animation: slideIn 1s forwards;
+  }
+  
+  @keyframes slideIn {
+      from{
+      }
+      to{
+          transform: translateY(0);
+      }
+  }
+  
+  
+  ul{
+    display: flex;
+  }
+  
+  nav ul li{
+    list-style: none;
+  
+  }
+  
+  nav ul li a{
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+  
+  }
+    
+  nav ul li a::before, nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f62a09;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+  }
+  
+  nav ul li a::before{
+    top:0;
+    transform-origin: left;
+  }
+  
+  nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+  }
+  
+  nav ul li a:hover::before,
+  nav ul li a:hover::after{
+    transform: scaleX(1);
+  }
+  footer {
+    margin-top: 20px;
+    padding: 20px;
+    color: #e8d2c7;
+    background-color: #240504;
+    text-align: center;
+    font-size: 150%;
+  }

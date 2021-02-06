@@ -1,0 +1,50 @@
+.formContent{
+    position: relative;
+    background-color: rgba(200, 200, 200, 0.801);
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 5%;
+    box-shadow: 5px 10px #888888
+}
+
+.headr{
+    position: relative;
+    padding-top: 2%;
+    font-size: 400%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+form{
+    padding-top: 10%;
+    padding-left: 35%;
+}
+
+form label{
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: 200%;
+
+}
+form textarea{
+    padding-top: 5%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.button{
+    margin-left: 30%;
+}
+
+  
